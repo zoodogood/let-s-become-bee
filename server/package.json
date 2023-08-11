@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "build:watch": "rollup -c -w",
     "start": "node ./dist/rollup/bundle.js"
   },
   "devDependencies": {
