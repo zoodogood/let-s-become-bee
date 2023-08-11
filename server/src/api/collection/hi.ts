@@ -1,12 +1,17 @@
-// import { Api } from "@/lib/APIPointDecorator";
-// import type { Request, Response, Application } from "express";
+
+import type { Request, Response } from "express";
+import { IApiPointModule } from "@/api/interfaces";
+
+function get(request: Request, response: Response){
+	response.send("job");
+	return;
+}
 
 
-// @Api("/hi")
-// class Get extends BaseApiHandler {
-// 	constructor(app: Application, request: Request, response: Response){
-// 		super(app, request, response);
-// 	}
-// };
 
-// export default [Get];
+
+export default {
+	name: "hi",
+	path: "/hi",
+	get
+} as IApiPointModule;
