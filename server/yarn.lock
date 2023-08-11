@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@discordjs/collection@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-1.5.2.tgz#3ba34c216e920999b5075f8fdc62f70bb2a7e0fb"
+  integrity sha512-LDplPy8SPbc8MYkuCdnLRGWqygAX97E8NH7gA9uz+NZ/hXknUKJHuxsOmhC6pmHnF9Zmg0kvfwrDjGsRIljt9g==
+
 "@rollup/plugin-typescript@^11.1.2":
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-11.1.2.tgz#09eb5690a650bb0334bf84125bce9abd296442e4"
