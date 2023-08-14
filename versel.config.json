@@ -1,10 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    { "source": "/api/*", "destination": "./server/dist/rollup/bundle.js" },
-    { "source": "/public/*", "destination": "./client/dist/*" }
-  ],
-  "outputDirectory": "." ,
+  "outputDirectory": "./client/dist" ,
   "buildCommand": "echo build; yarn build",
   "installCommand": "yarn install"
 
