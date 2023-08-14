@@ -8,6 +8,7 @@ function get(request: Request, response: Response){
 }
 
 function use(request: Request, response: Response){
+	console.info(request.path);
 	response.send("hi is 404 testing");
 }
 
