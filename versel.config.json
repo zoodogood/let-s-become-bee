@@ -3,5 +3,9 @@
   "rewrites": [
     { "source": "/api/*", "destination": "./server/dist/rollup/bundle.js" },
     { "source": "/public/*", "destination": "./client/dist/*" }
-  ]
+  ],
+  "outputDirectory": "." ,
+  "buildCommand": "echo build; yarn build",
+  "installCommand": "yarn install"
+
 }
