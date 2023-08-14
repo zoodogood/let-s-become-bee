@@ -13,8 +13,8 @@ function use(request: Request, response: Response){
 
 
 export default {
-	name: "roadmap",
-	path: "/roadmap",
+	name: "poligon",
+	path: "/poligon",
 	priorityIndex: -1,
 	get,
 	use
