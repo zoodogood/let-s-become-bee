@@ -14,7 +14,8 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@root/*": ["../*"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "outDir": "dist/ts",
@@ -33,7 +34,9 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "../lib/**/.ts",
+    "../lib/*.ts"
   ],
   "exclude": ["node_modules"]
 }
