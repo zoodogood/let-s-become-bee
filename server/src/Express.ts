@@ -28,4 +28,4 @@ async function listen(
 	return {app, server};
 }
 
-export { app, listen, ServerType };
+export { app, listen, ServerType, Express };
