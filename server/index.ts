@@ -1,6 +1,6 @@
 
 import { listen as listenExpress, app } from '@/Express';
-import { env } from '@root/lib/IUsingProcessEnv';
+import { env } from '@/lib/IUsingProcessEnv';
 
 
 import { collection, handlePoints } from '@/api';
