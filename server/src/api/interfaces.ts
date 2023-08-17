@@ -1,12 +1,14 @@
-import type { Request, Response } from "express";
+import type { RequestHandler } from "express";
+type PointCallback = (...handlers: RequestHandler[]) => unknown;
+
 
 interface IApiPointModule {
 	path: string,
 	name: string,
 	priorityIndex?: number,
-	get?: (request: Request, response: Response) => void,
-	post?: (request: Request, response: Response) => void,
-	use?: (request: Request, response: Response) => void
+	get?: PointCallback,
+	post?: PointCallback,
+	use?: PointCallback
 }
 
 export { IApiPointModule };
