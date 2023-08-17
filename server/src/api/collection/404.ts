@@ -24,7 +24,7 @@ async function use(request: Request, response: Response){
 
 
 export default {
-	name: "poligon",
+	name: "404",
 	path: "*",
 	priorityIndex: -1,
 	use
