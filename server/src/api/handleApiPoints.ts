@@ -7,6 +7,9 @@ function handlePoint(app: Application, point: IApiPointModule){
 
 	if (point.post)
 	app.post(point.path, point.post);
+
+	if (point.use)
+	app.use(point.path, point.use);
 }
 
 function handlePoints(app: Application, points: IApiPointModule[]){
