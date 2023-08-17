@@ -1,41 +1,51 @@
 <template>
-жмяк
-<input type="text">
-<img src="@/assets/raccoon.png" alt="">
+  <component is = "element-component" class = "component-container component-views-zoodgood">
+    <main class = "main-container">
+      
+      жмяк
+      <input type="text">
+    </main>
+    
+    <footer class = "footer-container">
+      <img class = "raccoon-welcomer" src="@/assets/raccoon.png" alt="">
+      <WaveFooter></WaveFooter>
+    </footer>
+  </component>
 </template>
 
 <script lang="ts" setup>
-
+  import WaveFooter from '@/components/@contributors/WaveFooter.vue';
 
 </script>
 
-<style>
-body 
-{
-  background-color: #faebd7;
-  font-family: sans-serif;
-  font-size: 2em;
-}
 
-input
-{
-  background-color: #7fffd405;
-  border-color: #7fffd422;
-  border-radius: 30px;
-  outline: none;
-  padding: 30px;
-
-  background-color: #2cd39b26;
-
-}
-</style>
 
 <style scoped>
-  img
-  {
-    width: calc(15vw + 100px);
-    position: fixed;
-    left: calc(3vw + 20px);
-    bottom: calc(3vw + 20px);
-  }
+
+.component-container 
+{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
+}
+
+.main-container
+{
+  flex-grow: 1;
+}
+
+.footer-container
+{
+  position: relative;
+}
+
+.raccoon-welcomer
+{
+  position: absolute;
+  width: calc(15vw + 100px);
+  left: calc(3vw + 20px);
+  bottom: calc(3vw + 20px);
+  z-index: -1;
+}
 </style>
