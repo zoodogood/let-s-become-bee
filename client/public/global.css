@@ -2,7 +2,6 @@
 {
 	--background-accent: #faebd7;
 	--primary-accent: #ff8800;
-	--input-size: 2em;
 
 	--adaptive-font-rule: calc(16px + 8 * (100vw / 1280));
 	--standart-media-screen-threshold: 980px;
@@ -33,8 +32,7 @@ body
 
 input 
 {
-	--_size: var(--input-size, 1em);
-	font-size: var(--_size);
+	font-size: var(--input-font-size);
 	outline: none;
 	border: min(1px, 0.1em) solid currentColor;
 	padding-block: 0.5em;
