@@ -1,5 +1,6 @@
 
 import { IApiPointModule } from "@/api/interfaces";
+import { MainApiPointsNameEnum } from "@/lib/MainApiPoints";
 import { Request, Response } from "express";
 import Path from 'path';
 
@@ -13,7 +14,7 @@ function get(request: Request, response: Response){
 
 
 export default {
-	name: "public",
+	name: MainApiPointsNameEnum.ClientIndex,
 	path: `/public/index`,
 	priorityIndex: 1,
 	get
