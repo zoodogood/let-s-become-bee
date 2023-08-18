@@ -38,7 +38,7 @@ async function use(request: Request, response: Response){
 
 
 export default {
-	name: "404",
+	name: MainApiPointsNameEnum.NotFound,
 	path: "*",
 	priorityIndex: -1,
 	use

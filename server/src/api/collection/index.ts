@@ -1,6 +1,7 @@
 
 import type { Request, Response } from "express";
 import { IApiPointModule } from "@/api/interfaces";
+import { MainApiPointsNameEnum } from "@/lib/MainApiPoints";
 
 
 
@@ -14,7 +15,7 @@ async function get(request: Request, response: Response){
 
 
 export default {
-	name: "index",
+	name: MainApiPointsNameEnum.Index,
 	path: "/",
 	get
 } as IApiPointModule;
