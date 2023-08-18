@@ -1,6 +1,7 @@
 :root
 {
 	--background-accent: #faebd7;
+	--primary-accent: #ff8800;
 	--input-size: 2em;
 
 	--adaptive-font-rule: calc(16px + 8 * (100vw / 1280));
@@ -12,6 +13,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+html
+{
+	accent-color: var( --primary-accent );
 }
 body 
 {
