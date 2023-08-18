@@ -1,10 +1,12 @@
 
 import { IApiPointModule } from "@/api/interfaces";
 import { Request, Response } from "express";
+import Path from 'path';
 
 
 function get(request: Request, response: Response){
-	response.sendFile("../client/dist/index.html");
+	const absolutePath = Path.resolve(process.cwd(), "../client/dist/index.html");
+	response.sendFile(absolutePath);
 }
 
 
