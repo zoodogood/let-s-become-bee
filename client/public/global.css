@@ -1,7 +1,7 @@
 :root
 {
 	--background-accent: #faebd7;
-	--text-accent: #000000;
+	--text-on-background-accent: #000000;
 	--primary-accent: #ff8800;
 	--green-accent: #ddeecc;
 	--blue-accent: #cde9ff;
@@ -25,7 +25,7 @@ html
 body 
 {
 	background-color: var(--background-accent);
-	color: var( --text-accent );
+	color: var( --text-on-background-accent-accent );
   	font-family: sans-serif;	
 	min-height: 100lvh;
 	display: flex;
