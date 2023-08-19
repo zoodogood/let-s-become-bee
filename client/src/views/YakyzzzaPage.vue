@@ -8,7 +8,7 @@
 	  
 	  <footer class = "footer-container">
 		 <img class = "yakyzzza-welcomer" src="@/assets/Yakyzzza.png" alt="">
-		 <WaveFooter></WaveFooter>
+		 <WaveFooter style="--accent-color: var(--red-accent)"/>
 	  </footer>
 	</component>
  </template>
@@ -48,7 +48,7 @@
 	bottom: calc(3vw + 10px);
 	z-index: -1;
 	border-radius: 50%;
-	border: 5px #cfc solid;
+	border: 5px var( --green-accent ) solid;
 	box-shadow: 0 0 10px #444;
 	animation-name: yakyzzza-welcomer ;
 	animation-duration: 8s;
