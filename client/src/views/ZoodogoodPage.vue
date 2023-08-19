@@ -1,21 +1,23 @@
 <template>
+  <VHeader/>
   <component is = "element-component" class = "component-container component-views-zoodgood">
-    <main class = "main-container">
-      
-      жмяк
-      <input type="text">
-    </main>
+    
+      <VMain class = "main-container">
+        жмяк
+        <input type="text" class = "enter-your-name-input">
+      </VMain>
     
     <footer class = "footer-container">
       <img class = "raccoon-welcomer" src="@/assets/raccoon.png" alt="">
-      <WaveFooter></WaveFooter>
+      <WaveFooter style="--accent-color: var(--green-accent)"/>
     </footer>
   </component>
 </template>
 
 <script lang="ts" setup>
   import WaveFooter from '@/components/@contributors/WaveFooter.vue';
-
+  import VHeader from '@/components/layout/Header.vue';
+  import VMain from '@/components/layout/Main.vue';
 </script>
 
 
@@ -27,7 +29,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  
+  width: 100%;
 }
 
 .main-container
