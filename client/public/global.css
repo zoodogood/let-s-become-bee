@@ -7,7 +7,7 @@
 	--blue-accent: #cde9ff;
 	--red-accent: #fb9595;
 
-	--adaptive-font-rule: calc(16px + 8 * (100vw / 1280));
+	--adaptive-font-rule: calc(12px + 8 * (100vw / 1280));
 	--standart-media-screen-threshold: 980px;
 }
 
