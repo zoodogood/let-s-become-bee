@@ -1,0 +1,12 @@
+- [x] 1. Initialize project
+- [x] 2. Initialize client (Vue)
+- [x] 3. Initialize server (Express)
+- [x] 4. Bind client and server (server response client public files via client logic)
+- [x] 5. Server has api system
+- [x] 6. Client has routes
+- [ ] 7. Full design the client
+- [ ] 8. Working database (server)
+- [ ] 9. Identify user (client/server)
+- [ ] 10. User can: get own test results; adventure on other test by url; create own test — all it via client GUI
+- [ ] 11. Deploy on vercel
+- [ ] 12. Every to-do (CTRL + SHIFT + F in code editor) are solved
